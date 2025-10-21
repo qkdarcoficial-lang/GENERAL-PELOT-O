@@ -60,7 +60,7 @@ Atualmente, o projeto encontra-se na fase de **Monitoramento Contínuo do Treina
 *   **Configuração Completa do Ambiente:** Todas as dependências (PyTorch, PettingZoo) foram instaladas e o ambiente de desenvolvimento está operacional.
 *   **Resolução de Erros Críticos:** `KeyError`s relacionados ao processamento de recompensas e à atualização da rede de destino foram identificados e corrigidos, garantindo a estabilidade do treinamento.
 *   **Refinamento da Função de Recompensa:** A função de recompensa híbrida foi aprimorada para melhor direcionar o comportamento colaborativo dos agentes, com testes unitários confirmando sua lógica.
-*   **Treinamento em Andamento:** O treinamento dos agentes foi reiniciado e está em execução contínua. Os agentes estão na fase de exploração (epsilon = 1.0), coletando experiências para o buffer de replay. As pontuações médias dos episódios estão sendo monitoradas e, embora ainda não mostrem um aprendizado significativo (o que é esperado nesta fase inicial), indicam que o sistema está funcionando conforme o previsto. **No último monitoramento, o treinamento atingiu o episódio 2399/100000, com uma pontuação média de -2.72 e epsilon de 1.0000.**
+*   **Treinamento em Andamento:** O treinamento dos agentes foi reiniciado e está em execução contínua. Os agentes estão na fase de exploração (epsilon = 1.0), coletando experiências para o buffer de replay. As pontuações médias dos episódios estão sendo monitoradas e, embora ainda não mostrem um aprendizado significativo (o que é esperado nesta fase inicial), indicam que o sistema está funcionando conforme o previsto. **No último monitoramento, o treinamento atingiu o episódio 2661/100000, com uma pontuação média de -2.78 e epsilon de 1.0000.**
 
 ## 5. Próximos Passos
 
