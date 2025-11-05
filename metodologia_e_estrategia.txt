@@ -1,0 +1,33 @@
+METODOLOGIA DE POSTOS E ESTRATÉGIA DE APRENDIZAGEM NO PROJETO GENERAL-PELOTÃO
+
+1. METODOLOGIA DE POSTOS (Chat-Driven Development)
+
+A metodologia de "postos" ou "Chat-Driven Development" é a forma como o desenvolvimento do projeto GENERAL-PELOTÃO é conduzido através da interação contínua e estruturada entre o Usuário e o Agente (Manus).
+
+- Posto de Comando (Usuário): O Usuário atua como o Diretor do projeto, definindo a visão, os objetivos de alto nível e fornecendo feedback e validação. O Usuário é o ponto de decisão final.
+- Posto de Execução (Agente - Manus): O Agente atua como o engenheiro de software e pesquisador autônomo, responsável por:
+    - Traduzir a visão do Usuário em tarefas técnicas (codificação, configuração, execução de treinamento).
+    - Executar comandos e scripts no ambiente de sandbox.
+    - Monitorar o progresso e coletar dados.
+    - Gerar relatórios e manter a documentação (README.md) atualizada.
+    - Resolver problemas técnicos (debugging).
+
+A estratégia de comunicação é baseada em:
+- Transparência: Todas as ações e resultados são reportados.
+- Rastreabilidade: O histórico de chat e os commits no GitHub servem como registro completo do desenvolvimento.
+- Iteração Rápida: O ciclo de feedback é imediato, permitindo ajustes rápidos na direção do projeto.
+
+2. ESTRATÉGIA DE APRENDIZAGEM (Aprendizado por Reforço Multiagente - MARL)
+
+A estratégia de aprendizagem dos agentes no projeto GENERAL-PELOTÃO é baseada no Aprendizado por Reforço Multiagente (MARL), utilizando o algoritmo Deep Q-Network (DQN) com foco em colaboração.
+
+- Algoritmo: Deep Q-Network (DQN) para cada agente.
+- Ambiente: PettingZoo (simple_tag_v3), um ambiente de perseguição e evasão que exige coordenação.
+- Recompensa Híbrida: O elemento central da estratégia. A função de recompensa é projetada para:
+    - Incentivar o sucesso da equipe (captura do alvo).
+    - Promover a colaboração (recompensar a proximidade entre os agentes caçadores).
+    - Penalizar comportamentos indesejados (colisões, inatividade).
+- Exploração (Epsilon-Greedy): No início do treinamento, os agentes utilizam uma alta taxa de exploração (epsilon = 1.0) para descobrir o ambiente e preencher o buffer de replay.
+- Estabilidade: O uso de uma rede de destino (target network) e um buffer de replay ajuda a estabilizar o processo de aprendizado, que é inerentemente complexo em ambientes multiagente.
+
+O objetivo da estratégia é fazer com que os agentes aprendam, de forma autônoma e descentralizada, a emergir táticas de coordenação complexas que levem à captura eficiente do alvo, demonstrando inteligência coletiva.
